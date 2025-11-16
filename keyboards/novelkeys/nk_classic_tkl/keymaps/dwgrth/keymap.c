@@ -13,6 +13,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+#include "keymap_us.h"
 #include QMK_KEYBOARD_H
 
 enum my_keycodes {
@@ -38,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL);
+const key_override_t delete_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_SPC, KC_UNDS);
 
 const key_override_t *key_overrides[] = {
     &delete_key_override
