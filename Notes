@@ -1,0 +1,2 @@
+# for clangd lsp:
+qmk compile --compiledb
