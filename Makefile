@@ -115,7 +115,7 @@ endef
 TRY_TO_MATCH_RULE_FROM_LIST = $(eval $(call TRY_TO_MATCH_RULE_FROM_LIST_HELPER,$1))$(RULE_FOUND)
 
 # As TRY_TO_MATCH_RULE_FROM_LIST_HELPER, but with additional
-# resolution of keyboard_aliases.hjson for provided rule 
+# resolution of keyboard_aliases.hjson for provided rule
 define TRY_TO_MATCH_RULE_FROM_LIST_HELPER_KB
     # Split on ":", padding with empty strings to avoid indexing issues
     TOKEN1:=$$(shell python3 -c "import sys; print((sys.argv[1].split(':',1)+[''])[0])" $$(RULE))
